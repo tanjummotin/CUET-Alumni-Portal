@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "title": "Annual Homecoming Celebration",
+        "date": "15",
+        "month": "October",
+        "time": "6:00 PM",
+        "place": "Alumni Stadium"
+       
+    },
+    {
+        "id": 2,
+        "title": "Professional Networking Mixer",
+        "date": "20",
+        "month": "January",
+        "time": "7:30 PM",
+        "place": "Business School Auditorium"
+ 
+    },
+    {
+        "id": 3,
+        "title": "Alumni Gala: Celebrating Achievements",
+        "date": "12",
+        "month": "June",
+        "time": "8:00 PM",
+        "place": "Grand Ballroom, City Hotel"
+
+    },
+    {
+        "id": 4,
+        "title": "Tech Talk Series: Innovation Insights",
+        "date": "5",
+        "month": "April",
+        "time": "4:30 PM",
+        "place": "Engineering Building, Room 301"
+    },
+    {
+        "id": 5,
+        "title": "Alumni Sports Day: Promoting Health and Unity",
+        "date": "18",
+        "month": "July",
+        "time": "10:00 AM",
+        "place": "Sports Complex"
+    },
+    {
+        "id": 6,
+        "title": "Fine Arts Exhibition: Showcasing Alumni Talents",
+        "date": "8",
+        "month": "May",
+        "time": "7:00 PM",
+        "place": "Art Gallery"
+    },
+    {
+        "id": 7,
+        "title": "Health and Wellness Workshop: A Holistic Approach",
+        "date": "14",
+        "month": "September",
+        "time": "5:30 PM",
+        "place": "Wellness Center"
+    },
+    {
+        "id": 8,
+        "title": "International Alumni Reunion: Bridging Continents",
+        "date": "3",
+        "month": "November",
+        "time": "6:30 PM",
+        "place": "Global Pavilion"
+    },
+    {
+        "id": 9,
+        "title": "Leadership Summit: Nurturing Tomorrow's Leaders",
+        "date": "22",
+        "month": "February",
+        "time": "9:00 AM",
+        "place": "Leadership Hall"
+    },
+    {
+        "id": 10,
+        "title": "Family Picnic Day: Building Bonds Beyond Academics",
+        "date": "7",
+        "month": "August",
+        "time": "12:00 PM",
+        "place": "Central Park"
+    }
+]

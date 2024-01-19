@@ -1,0 +1,51 @@
+.container {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    height: 10rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.eventContainer,.CareereContainer{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.eventType,.CareerType{
+    background-color: #F8F9FA;
+    padding:5vh;
+    height:100vh;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding: 10px;
+}
+
+.date {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(72, 67, 115);
+}
+
+.month {
+    font-size: 20px;
+    color: #757575;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #424242;
+}
+
+.time {
+    font-size: 18px;
+    color: #424242;
+}
+
+.place {
+    font-size: 18px;
+    color: #424242;
+}

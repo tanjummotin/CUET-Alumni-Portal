@@ -1,0 +1,44 @@
+.navbar-nav .nav-item {
+    /* Add your regular styles here */
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    /* Initially, set the width to 0 */
+    height: 3px;
+    background-color: #333;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    /* Add transitions for width and opacity */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover::after  {
+    width: 100%;
+    /* Increase the width to 100% on hover */
+    opacity: 1;
+}
+.dropdown-menu{
+    background-color: rgb(248, 249, 250);
+    border-radius: 0;
+    
+}
+
+.nav2{
+    background-color:rgb(93, 98, 142);
+    color: bisque;
+    font-weight: bold;
+}
