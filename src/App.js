@@ -35,7 +35,7 @@ function App() {
   //     break;
   // }
   return (
-    <>
+    <>                                                        
       {/* <Home /> */}
       {/* <Events /> */}
       <NavBar1></NavBar1>
