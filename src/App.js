@@ -10,6 +10,7 @@ import CareereCardUi from "./Components/CareerCardUi";
 import CardsData from "./Components/AlumniCardData";
 import EventCardsData from "./Components/EventCardData";
 import Login from "./Components/Login";
+import Register from "./Components/register"
 
 function App() {
   // let component;
@@ -44,6 +45,7 @@ function App() {
       {/* <CardsData /> */}
       {/* {EventCardsData} */}
       {/* <Login /> */}
+      <Register />
     </>
   );
 }
