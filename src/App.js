@@ -11,7 +11,7 @@ import CardsData from "./Components/AlumniCardData";
 import EventCardsData from "./Components/EventCardData";
 import Login from "./Components/Login";
 import Register from "./Components/register"
-
+import Add_Event_Form from "./Components/Add_Event_Form"
 function App() {
   // let component;
   // switch (window.location.pathname) {
@@ -45,7 +45,8 @@ function App() {
       {/* <CardsData /> */}
       {/* {EventCardsData} */}
       {/* <Login /> */}
-      <Register />
+      {/* <Register /> */}
+      < Add_Event_Form />
     </>
   );
 }

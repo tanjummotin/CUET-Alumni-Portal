@@ -74,7 +74,7 @@ return;
             <div className="col-12 col-md-9 col-lg-7 col-xl-6">
               <div className="card">
                 <div className="card-body p-5">
-                  <h3 className="text-center mb-5">React JS Submit Form with php mysql</h3>
+                  <h3 className="text-center mb-5">Alumni Regustration Form</h3>
                   <form>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="name">Name*</label>
