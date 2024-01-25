@@ -33,7 +33,7 @@ return;
 return;
 }
 
-    const url = 'http://localhost/test/event_form_submit.php';
+    const url = 'http://localhost/test/add_event_form.php';
     let fData = new FormData();
     fData.append('title', title);
     fData.append('date', date);
