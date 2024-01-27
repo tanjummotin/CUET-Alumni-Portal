@@ -45,7 +45,7 @@ function App() {
       {/* <EventCardUi /> */}
       {/* <CareereCardUi /> */}
       {/* <CardsData /> */}
-      <Registration></Registration>
+      {/* <Registration></Registration> */}
       {/* <Profile></Profile> */}
       {/* {EventCardsData} */}
       {/* <Login /> */}

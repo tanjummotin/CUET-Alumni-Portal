@@ -12,7 +12,10 @@ export default function Register() {
   const [organization, setorganization] = useState("");
   const [phone_no, setphone_no] = useState("");
   const [present_address, setpresent_address] = useState("");
-
+  const [gender, setgender] = useState("");
+  const [linkedIn_profile_link, setlinkedIn_profile_link] = useState("");
+  const [recent_degree, setrecent_degree] = useState("");
+  const [university_name, setuniversity_name] = useState("");
   const handleSubmit = () => {
     // Email validation
     if (nameField.length == 0) {
@@ -47,6 +50,20 @@ export default function Register() {
       alert("Present Address required!!");
       return;
     }
+    if (gender.length == 0) {
+      alert("Gender required!!");
+      return;
+    }
+
+    if (recent_degree.length == 0) {
+      alert("Recent Degree required!!");
+      return;
+    }
+    if (university_name.length == 0) {
+      alert("University Name required!!");
+      return;
+    }
+
 
     const url = "http://localhost/test/formsubmit.php";
     let fData = new FormData();
@@ -60,7 +77,12 @@ export default function Register() {
     fData.append("phone_no", phone_no);
     fData.append("email", email);
     fData.append("present_address", present_address);
-
+    fData.append("gender", gender);
+    fData.append("linkedIn_profile_link", linkedIn_profile_link);
+    fData.append("recent_degree", recent_degree);
+    fData.append("university_name", university_name);
+   
+   
     axios
       .post(url, fData)
       .then((response) => alert(response.data))
@@ -207,6 +229,58 @@ export default function Register() {
                         id="present_address"
                         value={present_address}
                         onChange={(e) => setpresent_address(e.target.value)}
+                      />
+                    </div>
+                    <div className="form-outline mb-4">
+                      <label className="form-label" for="gender">
+                      Gender*
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control form-control-lg"
+                        name="gender"
+                        id="gender"
+                        value={gender}
+                        onChange={(e) => setgender(e.target.value)}
+                      />
+                    </div>
+                    <div className="form-outline mb-4">
+                      <label className="form-label" for="linkedIn_profile_link">
+                      LinkedIn profile link
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control form-control-lg"
+                        name="linkedIn_profile_link"
+                        id="linkedIn_profile_link"
+                        value={linkedIn_profile_link}
+                        onChange={(e) => setlinkedIn_profile_link(e.target.value)}
+                      />
+                    </div>
+                    <div className="form-outline mb-4">
+                      <label className="form-label" for="recent_degree">
+                      Recent Degree
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control form-control-lg"
+                        name="recent_degree"
+                        id="recent_degree"
+                        value={recent_degree}
+                        onChange={(e) => setrecent_degree(e.target.value)}
+                      />
+                    </div>
+                    <div className="form-outline mb-4">
+                      <label className="form-label" for="university_name">
+                      University Name
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control form-control-lg"
+                        name="university_name"
+                        id="university_name"
+                        value={university_name}
+                        onChange={(e) => setuniversity_name(e.target.value)}
                       />
                     </div>
 
