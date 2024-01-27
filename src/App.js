@@ -42,11 +42,11 @@ function App() {
       <NavBar2></NavBar2>
       {/* <EventCardUi /> */}
       {/* <CareereCardUi /> */}
-      {/* <CardsData /> */}
+      <CardsData />
       {/* {EventCardsData} */}
       {/* <Login /> */}
       {/* <Register /> */}
-      < Add_Event_Form />
+      {/* < Add_Event_Form /> */}
     </>
   );
 }
