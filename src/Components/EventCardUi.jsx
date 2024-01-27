@@ -6,6 +6,8 @@ import NavBar1 from "./NavBar2";
 import { Grid } from "@mui/material";
 import "./eventCareer.css";
 import eventImg from "../assets/murti.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 export const EventCardUi = (props) => {
   return (
@@ -72,6 +74,13 @@ export const EventCardUi = (props) => {
         </div>
 
         <div className="col-9">
+          <div className="row justify-content-end mt-3 ">
+            <button className="btn btn-primary w-25">
+              <FontAwesomeIcon icon={faPlus} className="mr-1" />
+              {/* <FontAwesomeIcon icon="fa-solid fa-circle-location-arrow" /> */}
+              Add Event
+            </button>
+          </div>
           <Box className="mt-4 container text-center">
             <div className="row">
               <div className="col-2">

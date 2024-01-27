@@ -32,7 +32,45 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.carousel-inner {
+  height: 80vh;
+}
+
+.footer {
+
+  bottom: 0;
+  width: 100%;
+
+  /* Adjust the background color as needed */
+  padding: 20px;
+  background-color: #282c34;
+
+  margin-top: 2rem;
+}
+
+.registration-form {
+  width: 75%;
+  background-color: #e5ebed;
+  padding: 20px;
+
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="date"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"],
+.registration-form input[type="password"],
+.registration-form textarea {
+  border-radius: 0;
+  background-color: white;
+}
+
+.registration-form label {
+  font-weight: bold;
 }

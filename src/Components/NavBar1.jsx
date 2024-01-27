@@ -20,12 +20,12 @@ export default function NavBar1() {
         </button>
         <ul className="navbar-nav ">
           <li className="nav-item ">
-            <a className="nav-link ps-4 pe-4" href="#AlumniDirectory">
+            <a className="nav-link link ps-4 pe-4" href="#AlumniDirectory">
               Alumni Directory
             </a>
           </li>
           <li className="nav-item ">
-            <a className="nav-link ps-4 pe-4" href="#CAREERS">
+            <a className="nav-link ps-4 pe-4 login-btn" href="#login">
               Login
             </a>
           </li>

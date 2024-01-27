@@ -1,99 +1,88 @@
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import { Paper } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import NavBar1 from "./NavBar2";
+import React from "react";
+import image1 from "../assets/gate.jpg"; // Replace with your actual image paths
+import image2 from "../assets/murti.jpg";
+import image3 from "../assets/jungle.jpg";
 
-import "../home.css";
-import NavBar2 from "./NavBar2";
-import EventCardUi from "./EventCardUi";
-import Events from "./Events";
 function Home() {
   return (
-    // <Box sx={{ flexGrow: 1 }}>
-    //   <Grid container>
-    //     <Grid item lg={12} xs={12} md={12}>
-    //       <NavBar2 />
-    //     </Grid>
-    //     <Grid item lg={12} xs={12} md={12}>
-    //       <NavBar1 />
-    //     </Grid>
-    //     <Grid item lg={12} xs={12} md={12}>
-    //       <div id="carouselExampleIndicators" class="carousel slide">
-    //         <div class="carousel-indicators">
-    //           <button
-    //             type="button"
-    //             data-bs-target="#carouselExampleIndicators"
-    //             data-bs-slide-to="0"
-    //             class="active"
-    //             aria-current="true"
-    //             aria-label="Slide 1"
-    //           ></button>
-    //           <button
-    //             type="button"
-    //             data-bs-target="#carouselExampleIndicators"
-    //             data-bs-slide-to="1"
-    //             aria-label="Slide 2"
-    //           ></button>
-    //           <button
-    //             type="button"
-    //             data-bs-target="#carouselExampleIndicators"
-    //             data-bs-slide-to="2"
-    //             aria-label="Slide 3"
-    //           ></button>
-    //         </div>
-    //         <div class="carousel-inner">
-    //           <div class="carousel-item active">
-    //             {/* <img src="..." class="d-block w-100" /> */}
-    //           </div>
-    //           <div class="carousel-item">
-    //             {/* <img src=".." class="d-block w-100" /> */}
-    //           </div>
-    //           <div class="carousel-item">
-    //             {/* <img src="..." class="d-block w-100" /> */}
-    //           </div>
-    //         </div>
-    //         <button
-    //           class="carousel-control-prev"
-    //           type="button"
-    //           data-bs-target="#carouselExampleIndicators"
-    //           data-bs-slide="prev"
-    //         >
-    //           <span
-    //             class="carousel-control-prev-icon"
-    //             aria-hidden="true"
-    //           ></span>
-    //           <span class="visually-hidden">Previous</span>
-    //         </button>
-    //         <button
-    //           class="carousel-control-next"
-    //           type="button"
-    //           data-bs-target="#carouselExampleIndicators"
-    //           data-bs-slide="next"
-    //         >
-    //           <span
-    //             class="carousel-control-next-icon"
-    //             aria-hidden="true"
-    //           ></span>
-    //           <span class="visually-hidden">Next</span>
-    //         </button>
-    //       </div>
-    //     </Grid>
-    //     <Grid item lg={12} xs={12} md={12}>
-    //       <div className="About">About us </div>
-    //     </Grid>
-    //     <Grid lg={12} xs={12} md={12}>
-    //       <div className="Mission">Mission</div>
-    //     </Grid>
-    //     <Grid lg={12} xs={12} md={12}>
-    //       <div className="Event">Events</div>
-    //     </Grid>
-    //     <Grid lg={12} xs={12} md={12}>
-    //       <div className="Footer">Footer</div>
-    //     </Grid>
-    //   </Grid>
-    // </Box>
-    <Events></Events>
+    <>
+      <div
+        id="carouselExampleIndicators"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={image1} className="d-block w-100 h-50" alt="Image 1" />
+          </div>
+          <div className="carousel-item">
+            <img src={image2} className="d-block w-100 h-50" alt="Image 2" />
+          </div>
+          <div className="carousel-item">
+            <img src={image3} className="d-block w-100 h-50" alt="Image 3" />
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div className="container py-5">
+        <strong className="text-center d-block">About CUET ALumni</strong>
+        <p>
+          To establish a meaningful and future-oriented association for the
+          alumni of CUET, focusing on their social, cultural, and professional
+          endeavors. The goal is to enhance unity and camaraderie among members,
+          provide unwavering assistance to elevate our cherished alma mater into
+          a globally acclaimed institution for technical and scientific
+          education, and actively contribute to the rapid and sustainable
+          development of the nation..<a href="Mission">see more</a>
+        </p>
+      </div>
+    </>
   );
 }
+
 export default Home;
