@@ -2,13 +2,34 @@
     /* Add your regular styles here */
 }
 
-.navbar-nav .nav-link {
+.login-btn {
+    margin: auto;
+    background-color: #fff;
+    /* Set background color to white */
+    color: #007bff;
+    /* Set text color to your desired color */
+    padding: 5px 30px;
+    /* Adjust padding as needed */
+    border: 2px solid #333;
+    /* Set border color to your desired color */
+    border-radius: 50px;
+    /* Use a high border-radius to create oval shape */
+}
+
+.login-btn:hover {
+    background-color: #007bff;
+    /* Change background color on hover */
+    color: #fff;
+    /* Change text color on hover */
+}
+
+.navbar-nav .link {
     position: relative;
     color: #333;
     transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link::after  {
+.navbar-nav .link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -22,23 +43,24 @@
     /* Add transitions for width and opacity */
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav .link:hover {
     color: #333;
 }
 
-.navbar-nav .nav-link:hover::after  {
+.navbar-nav .link:hover::after {
     width: 100%;
     /* Increase the width to 100% on hover */
     opacity: 1;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     background-color: rgb(248, 249, 250);
     border-radius: 0;
-    
+
 }
 
-.nav2{
-    background-color:rgb(93, 98, 142);
+.nav2 {
+    background-color: rgb(93, 98, 142);
     color: bisque;
     font-weight: bold;
 }

@@ -10,8 +10,10 @@ import CareereCardUi from "./Components/CareerCardUi";
 import CardsData from "./Components/AlumniCardData";
 import EventCardsData from "./Components/EventCardData";
 import Login from "./Components/Login";
-import Register from "./Components/register"
-import Add_Event_Form from "./Components/Add_Event_Form"
+import Register from "./Components/register";
+import Add_Event_Form from "./Components/Add_Event_Form";
+import Profile from "./Components/ProfilePage";
+import Registration from "./Components/registration";
 function App() {
   // let component;
   // switch (window.location.pathname) {
@@ -35,18 +37,19 @@ function App() {
   //     break;
   // }
   return (
-    <>                                                        
-      {/* <Home /> */}
+    <>
       {/* <Events /> */}
       <NavBar1></NavBar1>
       <NavBar2></NavBar2>
+      {/* <Home /> */}
       {/* <EventCardUi /> */}
       {/* <CareereCardUi /> */}
-      <CardsData />
+      {/* <CardsData /> */}
+      <Registration></Registration>
+      {/* <Profile></Profile> */}
       {/* {EventCardsData} */}
       {/* <Login /> */}
       {/* <Register /> */}
-      {/* < Add_Event_Form /> */}
     </>
   );
 }
