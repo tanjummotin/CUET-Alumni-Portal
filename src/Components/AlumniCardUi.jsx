@@ -38,7 +38,7 @@ export const CardUi = (props) => {
               {props.present_position},{props.organization}
             </p>
           </div>
-          <div className="col-9 card-body">
+          {/* <div className="col-9 card-body"> */}
             <div className="row">
               <div className="row-cols-1">{props.name}</div>
               <div className="row-cols-1">{props.email}</div>
