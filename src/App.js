@@ -1,5 +1,5 @@
 import "./App.css";
-import { EventCardUi } from "./Components/EventCardUi";
+import  EventCardUi from "./Components/EventCardUi";
 import Home from "./Components/Home";
 import Events from "./Components/Events";
 import NavBar2 from "./Components/NavBar2";
@@ -44,7 +44,7 @@ function App() {
       <NavBar1></NavBar1>
       <NavBar2></NavBar2>
       {/* <Home /> */}
-      {/* <EventCardUi /> */}
+      <EventCardUi />
       {/* <CareereCardUi /> */}
       {/* <CardsData /> */}
       {/* <Registration></Registration> */}
@@ -54,7 +54,7 @@ function App() {
       {/* <Register /> */}
       {/* <Add_Event_Form /> */}
       {/* <AlumniList /> */}
-      <EventList />
+      {/* <EventList /> */}
     </>
   );
 }
