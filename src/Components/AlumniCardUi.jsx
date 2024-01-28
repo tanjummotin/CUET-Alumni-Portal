@@ -10,7 +10,7 @@ export const CardUi = (props) => {
   return (
     <>
       <div className="card alumniCard">
-        <div className=" row">
+        <div className="row">
           <div className="col-3 card-body  justify-content-center align-items-center m-auto">
             {props.gender == "Woman" ? (
               <img
@@ -33,12 +33,19 @@ export const CardUi = (props) => {
 
               <i className="icofont-star text-warning fs-4"></i>
             </div> */}
+
+            <p>
+              {props.present_position},{props.organization}
+            </p>
           </div>
           <div className="col-9 card-body">
-            <h6 className="mb-0 mt-2  fs-6">{props.name}</h6>
-            <span className="Designation light-info-bg py-1 px-2 rounded-1 d-inline-block fw-bold small-11 mb-0 mt-1 ">
-              {props.designation}
-            </span>
+            <div className="row">
+              <div className="row-cols-1">{props.name}</div>
+              <div className="row-cols-1">{props.email}</div>
+              <div className="row-cols-1">{props.blood_group}</div>
+              <div className="row-cols-1">{props.present_address}</div>
+            </div>
+
             <div className="video-setting-icon mt-3 pt-3 border-top">
               <p>{props.about}</p>
             </div>

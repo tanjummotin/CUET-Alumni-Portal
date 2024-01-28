@@ -1,5 +1,9 @@
 // import React, { Component } from "react";
 // import "./Cardstyle.css";
+// // import eventAttributes from "./Events.json";
+// import { EventCardUi } from "./EventCardUi";
+// import React, { Component } from "react";
+// import "./Cardstyle.css";
 // import eventAttributes from "./Events.json";
 // import { EventCardUi } from "./EventCardUi";
 
@@ -84,4 +88,5 @@
 //   }
 // }
 
+// export default EventCardsData;
 // export default EventCardsData;

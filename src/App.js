@@ -15,7 +15,7 @@ import Add_Event_Form from "./Components/Add_Event_Form";
 import Profile from "./Components/ProfilePage";
 import Registration from "./Components/registration";
 import AlumniList from "./Components/alumni_list";
-import EventList from "./Components/event_list"
+import EventList from "./Components/event_list";
 function App() {
   // let component;
   // switch (window.location.pathname) {
@@ -46,7 +46,7 @@ function App() {
       {/* <Home /> */}
       <EventCardUi />
       {/* <CareereCardUi /> */}
-      {/* <CardsData /> */}
+      <CardsData />
       {/* <Registration></Registration> */}
       {/* <Profile></Profile> */}
       {/* {EventCardsData} */}

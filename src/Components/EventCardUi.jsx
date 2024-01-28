@@ -5,7 +5,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import eventImg from "../assets/murti.jpg";
 import "./eventCareer.css";
 
-const EventCardUi = () => {
+export const EventCardUi = () => {
   const [eventData, setEventData] = useState([]);
 
   useEffect(() => {
