@@ -44,7 +44,7 @@ function App() {
       <NavBar1></NavBar1>
       <NavBar2></NavBar2>
       {/* <Home /> */}
-      <EventCardUi />
+      {/* <EventCardUi /> */}
       {/* <CareereCardUi /> */}
       <CardsData />
       {/* <Registration></Registration> */}
