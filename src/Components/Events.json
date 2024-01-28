@@ -5,7 +5,8 @@
         "date": "15",
         "month": "October",
         "time": "6:00 PM",
-        "place": "Alumni Stadium"
+        "place": "Alumni Stadium",
+        "description":"xxxx"
        
     },
     {
@@ -14,7 +15,8 @@
         "date": "20",
         "month": "January",
         "time": "7:30 PM",
-        "place": "Business School Auditorium"
+        "place": "Business School Auditorium",
+         "description":"xxxx"
  
     },
     {
@@ -23,7 +25,8 @@
         "date": "12",
         "month": "June",
         "time": "8:00 PM",
-        "place": "Grand Ballroom, City Hotel"
+        "place": "Grand Ballroom, City Hotel",
+         "description":"xxxx"
 
     },
     {
@@ -32,7 +35,8 @@
         "date": "5",
         "month": "April",
         "time": "4:30 PM",
-        "place": "Engineering Building, Room 301"
+        "place": "Engineering Building, Room 301",
+         "description":"xxxx"
     },
     {
         "id": 5,
@@ -40,7 +44,8 @@
         "date": "18",
         "month": "July",
         "time": "10:00 AM",
-        "place": "Sports Complex"
+        "place": "Sports Complex",
+         "description":"xxxx"
     },
     {
         "id": 6,
@@ -48,7 +53,8 @@
         "date": "8",
         "month": "May",
         "time": "7:00 PM",
-        "place": "Art Gallery"
+        "place": "Art Gallery",
+         "description":"xxxx"
     },
     {
         "id": 7,
@@ -56,7 +62,8 @@
         "date": "14",
         "month": "September",
         "time": "5:30 PM",
-        "place": "Wellness Center"
+        "place": "Wellness Center",
+         "description":"xxxx"
     },
     {
         "id": 8,
@@ -64,7 +71,8 @@
         "date": "3",
         "month": "November",
         "time": "6:30 PM",
-        "place": "Global Pavilion"
+        "place": "Global Pavilion",
+         "description":"xxxx"
     },
     {
         "id": 9,
@@ -72,7 +80,8 @@
         "date": "22",
         "month": "February",
         "time": "9:00 AM",
-        "place": "Leadership Hall"
+        "place": "Leadership Hall",
+         "description":"xxxx"
     },
     {
         "id": 10,
@@ -80,6 +89,7 @@
         "date": "7",
         "month": "August",
         "time": "12:00 PM",
-        "place": "Central Park"
+        "place": "Central Park",
+         "description":"xxxx"
     }
 ]
