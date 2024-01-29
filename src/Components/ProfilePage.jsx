@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import React, { useState, useEffect } from "react";
 import {
   faEnvelope,
   faMapMarkerAlt,
@@ -10,6 +10,15 @@ import {
 import { FaE, FaEnvelope } from "react-icons/fa6";
 
 export default function Profile(second) {
+  const [alumniData, setAlumniData] = useState([]);
+
+  useEffect(() => {
+    // Fetch alumni data from PHP script
+    fetch("http://localhost/test/fetch_alumni_data.php")
+      .then((response) => response.json())
+      .then((data) => setAlumniData(data))
+      .catch((error) => console.error("Error fetching alumni data:", error));
+  }, []);
   return (
     <>
       <div className="container">
