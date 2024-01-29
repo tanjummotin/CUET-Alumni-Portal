@@ -4,7 +4,7 @@ import male from "../assets/manavatar.jpg";
 import female from "../assets/womanavatar.jpg";
 import "./Cardstyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { Link } from "react-router-dom";
 import {
   faEnvelope,
   faMapMarkerAlt,
@@ -53,9 +53,12 @@ export const CardUi = (props) => {
                 </li>
               </ul>
             </div>
-            <a href="#" className="btn btn-primary btn-sm mt-1 ViewBtn">
+            <Link
+              to="\profileView"
+              className="btn btn-primary btn-sm mt-1 ViewBtn"
+            >
               View Details
-            </a>
+            </Link>
           </div>
         </div>
       </div>

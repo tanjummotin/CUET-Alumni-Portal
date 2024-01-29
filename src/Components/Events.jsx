@@ -9,7 +9,7 @@ export default function Events() {
   return (
     <>
       <NavBar1 />
-      <NavBar2 />
+      {/* <NavBar2 /> */}
       <Box sx={{ flexGrow: 1 }}>
         <Grid item lg={12} xs={12} md={12}></Grid>
         <div className="row-cols-1">

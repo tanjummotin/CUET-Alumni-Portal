@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import eventImg from "../assets/murti.jpg";
 import "./eventCareer.css";
-
+import { Link } from "react-router-dom";
 export const EventCardUi = () => {
   const [eventData, setEventData] = useState([]);
 
@@ -83,7 +83,9 @@ export const EventCardUi = () => {
           <div className="row justify-content-end mt-3">
             <button className="btn btn-primary w-25">
               <FontAwesomeIcon icon={faPlus} className="mr-1" />
-              Add Event
+              <Link to="/eventForm" className="text-white">
+                Add Event
+              </Link>
             </button>
           </div>
           {/* Map through eventData and render each event */}
