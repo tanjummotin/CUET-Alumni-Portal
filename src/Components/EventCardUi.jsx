@@ -125,3 +125,4 @@ export const EventCardUi = () => {
     </>
   );
 };
+export default EventCardUi;

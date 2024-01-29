@@ -12,7 +12,7 @@ export const CardUi = (props) => {
       <div className="card alumniCard">
         <div className="row">
           <div className="col-3 card-body  justify-content-center align-items-center m-auto">
-            {props.gender == "Woman" ? (
+            {props.gender == "Female" ? (
               <img
                 src={female}
                 className="avatar xl rounded-circle img-thumbnail shadow-sm"

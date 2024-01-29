@@ -24,25 +24,25 @@ const AlumniList = () => {
           </tr>
         </thead>
         <tbody>
-        {alumniData.map(alumni => (
-  <tr key={alumni.id}>
-    <td>{alumni.id}</td>
-    <td>{alumni.name}</td>
-    <td>{alumni.date_of_birth}</td>
-    <td>{alumni.blood_group}</td>
-    <td>{alumni.department}</td>
-    <td>{alumni.batch}</td>
-    <td>{alumni.present_position}</td>
-    <td>{alumni.organization}</td>
-    <td>{alumni.present_address}</td>
-    <td>{alumni.phone_no}</td>
-    <td>{alumni.email}</td>
-    <td>{alumni.gender}</td>
-    <td>{alumni.linkedIn_profile_link}</td>
-    <td>{alumni.recent_degree}</td>
-    <td>{alumni.university_name}</td>
-  </tr>
-))}
+          {alumniData.map(alumni => (
+            <tr key={alumni.id}>
+              <td>{alumni.id}</td>
+              <td>{alumni.name}</td>
+              <td>{alumni.date_of_birth}</td>
+              <td>{alumni.blood_group}</td>
+              <td>{alumni.department}</td>
+              <td>{alumni.batch}</td>
+              <td>{alumni.present_position}</td>
+              <td>{alumni.organization}</td>
+              <td>{alumni.present_address}</td>
+              <td>{alumni.phone_no}</td>
+              <td>{alumni.email}</td>
+              <td>{alumni.gender}</td>
+              <td>{alumni.linkedIn_profile_link}</td>
+              <td>{alumni.recent_degree}</td>
+              <td>{alumni.university_name}</td>
+            </tr>
+          ))}
 
         </tbody>
       </table>

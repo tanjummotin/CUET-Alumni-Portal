@@ -1,5 +1,5 @@
 import "./App.css";
-import { EventCardUi } from "./Components/EventCardUi";
+import  EventCardUi from "./Components/EventCardUi";
 import Home from "./Components/Home";
 import Events from "./Components/Events";
 import NavBar2 from "./Components/NavBar2";

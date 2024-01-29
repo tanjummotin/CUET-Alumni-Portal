@@ -2,6 +2,10 @@
 // import "./Cardstyle.css";
 // // import eventAttributes from "./Events.json";
 // import { EventCardUi } from "./EventCardUi";
+// import React, { Component } from "react";
+// import "./Cardstyle.css";
+// import eventAttributes from "./Events.json";
+// import { EventCardUi } from "./EventCardUi";
 
 // class EventCardsData extends Component {
 //   render() {
@@ -34,7 +38,7 @@
 //           <hr />
 //           <div className="form-check">
 //             <input
-//               // className="form-check-input"
+//               className="form-check-input"
 //               type="checkbox"
 //               value=""
 //               id="social"
@@ -66,12 +70,11 @@
 //             </label>
 //           </div>
 //         </div>
-//         <div className="row row-cols-1">
+//         <div className="col-9">
 //           {eventAttributes.map((record, index) => (
-//             <div key={index} className="col-12">
+//             <div key={index} className="row mb-3">
 //               <EventCardUi
 //                 title={record.title}
-//                 description={record.}
 //                 time={record.time}
 //                 month={record.month}
 //                 date={record.date}
@@ -85,4 +88,5 @@
 //   }
 // }
 
+// export default EventCardsData;
 // export default EventCardsData;
