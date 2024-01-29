@@ -34,6 +34,7 @@ function App() {
           <Route path="/eventList" element={<EventCardUi />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/searchResult" element={<SearchResults />} />
           <Route path="/eventForm" element={<Add_Event_Form />} />
           <Route path="/alumniDirectory/search" element={<SearchResults />} />
         </Routes>
