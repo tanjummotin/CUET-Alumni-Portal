@@ -16,6 +16,8 @@ import Profile from "./Components/ProfilePage";
 import Registration from "./Components/registration";
 import AlumniList from "./Components/alumni_list";
 import EventList from "./Components/event_list";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SearchResults from "./Components/SearchResults"
 function App() {
   // let component;
   // switch (window.location.pathname) {
@@ -43,7 +45,7 @@ function App() {
       {/* <Events /> */}
       <NavBar1></NavBar1>
       <NavBar2></NavBar2>
-      {/* <Home /> */}
+      {/* <Home />  */}
       {/* <EventCardUi /> */}
       {/* <CareereCardUi /> */}
       <CardsData />
@@ -54,7 +56,15 @@ function App() {
       {/* <Register /> */}
       {/* <Add_Event_Form /> */}
       {/* <AlumniList /> */}
-      {/* <EventList /> */}
+      {/* <SearchResults /> */}
+      {/* <EventList />
+      {/* <Router>
+      <Switch>
+        <Route path="/" exact component={CardsData} />
+        <Route path="/search-results" component={SearchResults} />
+      </Switch>
+    </Router>
+       */}
     </>
   );
 }
