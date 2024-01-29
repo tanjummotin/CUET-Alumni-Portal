@@ -33,7 +33,7 @@ export default function Login() {
               </div>
               <div className="col-12 mb-3">
                 <button type="submit" className="btn btn-primary w-100">
-                  <Link to="/">Login </Link>
+                  <Link to="/login">Login </Link>
                 </button>
               </div>
               <div className="col-12 mb-3 text-center">
