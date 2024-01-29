@@ -1,39 +1,32 @@
 import "./App.css";
-import  EventCardUi from "./Components/EventCardUi";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Home from "./Components/Home";
-import Events from "./Components/Events";
 import NavBar2 from "./Components/NavBar2";
 import NavBar1 from "./Components/NavBar1";
-import { Grid } from "@mui/material";
-import CareereCardUi from "./Components/CareerCardUi";
 
-import CardsData from "./Components/AlumniCardData";
-import EventCardsData from "./Components/EventCardData";
 import Login from "./Components/Login";
 import Register from "./Components/register";
-import Add_Event_Form from "./Components/Add_Event_Form";
 import Profile from "./Components/ProfilePage";
-import Registration from "./Components/registration";
-import AlumniList from "./Components/alumni_list";
-import EventList from "./Components/event_list";
+
+import CardsData from "./Components/AlumniCardData";
+import EventCardUi from "./Components/EventCardUi";
+
 function App() {
   return (
     <>
-      {/* <Events /> */}
-      <NavBar1></NavBar1>
-      <NavBar2></NavBar2>
-      {/* <Home /> */}
-      {/* <EventCardUi /> */}
-      {/* <CareereCardUi /> */}
-      <CardsData />
-      {/* <Registration></Registration> */}
-      {/* <Profile></Profile> */}
-      {/* {EventCardsData} */}
-      {/* <Login /> */}
-      {/* <Register /> */}
-      {/* <Add_Event_Form /> */}
-      {/* <AlumniList /> */}
-      {/* <EventList /> */}
+      <BrowserRouter>
+        <NavBar1 />
+        <NavBar2 />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/alumniDirectory" element={<CardsData />} />
+          <Route path="/eventList" element={<EventCardUi />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

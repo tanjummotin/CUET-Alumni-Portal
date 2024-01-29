@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../nav.css";
 export default function NavBar2() {
   return (
@@ -6,22 +7,27 @@ export default function NavBar2() {
         <ul className="navbar-nav">
           <li className="nav-item ps-4 pe-4">
             <li className="nav-item ps-4 pe-4">
-              <a className="nav-link" href="#ABOUT">
+              <Link className="nav-link" to="/about">
                 ABOUT
-              </a>
+              </Link>
             </li>
           </li>
           <li className="nav-item ps-4 pe-4">
-            <a className="nav-link" href="#EVENTS">
+            <Link className="nav-link" to="/eventList">
               EVENTS
-            </a>
+            </Link>
           </li>
           <li className="nav-item ps-4 pe-4">
+            <Link className="nav-link" to="/register">
+              Register
+            </Link>
+          </li>
+          {/* <li className="nav-item ps-4 pe-4">
             <a className="nav-link" href="#CAREERS">
               CAREERS
             </a>
-          </li>
-          <li class="nav-item ps-4 pe-4 dropdown">
+          </li> */}
+          {/* <li class="nav-item ps-4 pe-4 dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -51,7 +57,7 @@ export default function NavBar2() {
                 </a>
               </li>
             </ul>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
