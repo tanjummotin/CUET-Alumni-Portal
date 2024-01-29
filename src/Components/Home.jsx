@@ -78,7 +78,7 @@ function Home() {
           provide unwavering assistance to elevate our cherished alma mater into
           a globally acclaimed institution for technical and scientific
           education, and actively contribute to the rapid and sustainable
-          development of the nation..<Link to="/">see more</Link>
+          development of the nation..<Link to="/about">see more</Link>
         </p>
       </div>
     </>
