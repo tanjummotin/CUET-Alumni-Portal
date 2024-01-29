@@ -19,7 +19,7 @@ export default function NavBar2() {
           </li>
           <li className="nav-item ps-4 pe-4">
             <Link className="nav-link" to="/register">
-              Register
+              REGISTER
             </Link>
           </li>
           {/* <li className="nav-item ps-4 pe-4">

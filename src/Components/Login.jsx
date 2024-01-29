@@ -1,5 +1,5 @@
 import cover from "../assets/Untitled design (1).png";
-
+import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <div className="container-fluid p-3 row justify-content-center">
@@ -33,7 +33,7 @@ export default function Login() {
               </div>
               <div className="col-12 mb-3">
                 <button type="submit" className="btn btn-primary w-100">
-                  Login
+                  <Link to="/">Login </Link>
                 </button>
               </div>
               <div className="col-12 mb-3 text-center">

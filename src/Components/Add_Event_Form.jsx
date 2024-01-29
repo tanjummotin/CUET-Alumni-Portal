@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "../register.css";
+import { Link } from "react-router-dom";
 export default function Add_Event_Form() {
   const [title, settitle] = useState("");
   const [date, setdate] = useState("");
@@ -153,14 +154,16 @@ export default function Add_Event_Form() {
                     </div>
 
                     <div className="d-flex justify-content-center">
-                      <input
-                        type="button"
-                        className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
-                        name="submit"
-                        id="submit"
-                        value="Submit"
-                        onClick={handleSubmit}
-                      />
+                      <Link to="/eventList">
+                        <input
+                          type="button"
+                          className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                          name="submit"
+                          id="submit"
+                          value="Submit"
+                          onClick={handleSubmit}
+                        />
+                      </Link>
                     </div>
                   </form>
                 </div>

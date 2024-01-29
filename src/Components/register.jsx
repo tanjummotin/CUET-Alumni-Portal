@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 // import '../register.css';
 export default function Register() {
   const [nameField, setNameField] = useState("");
@@ -69,7 +70,6 @@ export default function Register() {
       return;
     }
 
-
     const url = "http://localhost/test/formsubmit.php";
     let fData = new FormData();
     fData.append("name", nameField);
@@ -86,8 +86,8 @@ export default function Register() {
     fData.append("linkedIn_profile_link", linkedIn_profile_link);
     fData.append("recent_degree", recent_degree);
     fData.append("university_name", university_name);
-    fData.append("password",password);
-   
+    fData.append("password", password);
+
     axios
       .post(url, fData)
       .then((response) => alert(response.data))
@@ -238,7 +238,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="gender">
-                      Gender*
+                        Gender*
                       </label>
                       <input
                         type="text"
@@ -251,7 +251,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="linkedIn_profile_link">
-                      LinkedIn profile link
+                        LinkedIn profile link
                       </label>
                       <input
                         type="text"
@@ -259,12 +259,14 @@ export default function Register() {
                         name="linkedIn_profile_link"
                         id="linkedIn_profile_link"
                         value={linkedIn_profile_link}
-                        onChange={(e) => setlinkedIn_profile_link(e.target.value)}
+                        onChange={(e) =>
+                          setlinkedIn_profile_link(e.target.value)
+                        }
                       />
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="recent_degree">
-                      Recent Degree
+                        Recent Degree
                       </label>
                       <input
                         type="text"
@@ -277,7 +279,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="university_name">
-                      University Name
+                        University Name
                       </label>
                       <input
                         type="text"
@@ -290,10 +292,10 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="university_name">
-                      Password*
+                        Password*
                       </label>
                       <input
-                        type='password'
+                        type="password"
                         className="form-control form-control-lg"
                         name="password"
                         id="password"
@@ -303,14 +305,16 @@ export default function Register() {
                     </div>
 
                     <div className="d-flex justify-content-center">
-                      <input
-                        type="button"
-                        className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
-                        name="submit"
-                        id="submit"
-                        value="Register"
-                        onClick={handleSubmit}
-                      />
+                      <Link to="/">
+                        <input
+                          type="button"
+                          className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                          name="submit"
+                          id="submit"
+                          value="Register"
+                          onClick={handleSubmit}
+                        />
+                      </Link>
                     </div>
 
                     <p className="text-center text-muted mt-5 mb-0">
