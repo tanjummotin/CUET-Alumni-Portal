@@ -17,27 +17,6 @@ import Registration from "./Components/registration";
 import AlumniList from "./Components/alumni_list";
 import EventList from "./Components/event_list";
 function App() {
-  // let component;
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <App />;
-  //     break;
-  //   case "/#HOME":
-  //     component = <Home />;
-  //     break;
-  //   case "/##AlumniDirectory":
-  //     component = <AlumniDirectory />;
-  //     break;
-  //   // case "/#ABOUT":
-  //   //   component = <About />;
-  //   //   break;
-  //   case "/#EVENTS":
-  //     component = <EventCardUi />;
-  //     break;
-  //   case "/#CAREERS":
-  //     component = <CareereCardUi />;
-  //     break;
-  // }
   return (
     <>
       {/* <Events /> */}
