@@ -1,17 +1,12 @@
 import "./App.css";
-import  EventCardUi from "./Components/EventCardUi";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Home from "./Components/Home";
-import Events from "./Components/Events";
 import NavBar2 from "./Components/NavBar2";
 import NavBar1 from "./Components/NavBar1";
-import { Grid } from "@mui/material";
-import CareereCardUi from "./Components/CareerCardUi";
 
-import CardsData from "./Components/AlumniCardData";
-import EventCardsData from "./Components/EventCardData";
 import Login from "./Components/Login";
 import Register from "./Components/register";
-import Add_Event_Form from "./Components/Add_Event_Form";
 import Profile from "./Components/ProfilePage";
 import Registration from "./Components/registration";
 import AlumniList from "./Components/alumni_list";
@@ -19,52 +14,20 @@ import EventList from "./Components/event_list";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SearchResults from "./Components/SearchResults"
 function App() {
-  // let component;
-  // switch (window.location.pathname) {
-  //   case "/":
-  //     component = <App />;
-  //     break;
-  //   case "/#HOME":
-  //     component = <Home />;
-  //     break;
-  //   case "/##AlumniDirectory":
-  //     component = <AlumniDirectory />;
-  //     break;
-  //   // case "/#ABOUT":
-  //   //   component = <About />;
-  //   //   break;
-  //   case "/#EVENTS":
-  //     component = <EventCardUi />;
-  //     break;
-  //   case "/#CAREERS":
-  //     component = <CareereCardUi />;
-  //     break;
-  // }
   return (
     <>
-      {/* <Events /> */}
-      <NavBar1></NavBar1>
-      <NavBar2></NavBar2>
-      {/* <Home />  */}
-      {/* <EventCardUi /> */}
-      {/* <CareereCardUi /> */}
-      <CardsData />
-      {/* <Registration></Registration> */}
-      {/* <Profile></Profile> */}
-      {/* {EventCardsData} */}
-      {/* <Login /> */}
-      {/* <Register /> */}
-      {/* <Add_Event_Form /> */}
-      {/* <AlumniList /> */}
-      {/* <SearchResults /> */}
-      {/* <EventList />
-      {/* <Router>
-      <Switch>
-        <Route path="/" exact component={CardsData} />
-        <Route path="/search-results" component={SearchResults} />
-      </Switch>
-    </Router>
-       */}
+      <BrowserRouter>
+        <NavBar1 />
+        <NavBar2 />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/alumniDirectory" element={<CardsData />} />
+          <Route path="/eventList" element={<EventCardUi />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

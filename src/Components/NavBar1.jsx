@@ -1,13 +1,15 @@
 import "../nav.css";
+import { Link } from "react-router-dom";
 const CUETLogo = require("../assets/CUETALUMNI_finall.png");
+
 export default function NavBar1() {
   return (
     <nav className="nav2 navbar navbar-expand-lg ">
       <div className="d-flex justify-content-evenly container-fluid ">
-        <a className="navbar-brand" href="#HOME">
+        <Link className="navbar-brand" to="/">
           <img src={CUETLogo} alt="Cuet Logo" width="90" height="40" />
-        </a>
-        <button
+        </Link>
+        {/* /* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -15,19 +17,19 @@ export default function NavBar1() {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        > 
+          <span className="navbar-toggler-icon"></span>
+        </button> */}
         <ul className="navbar-nav ">
           <li className="nav-item ">
-            <a className="nav-link link ps-4 pe-4" href="#AlumniDirectory">
+            <Link className="nav-link link ps-4 pe-4" to="/alumniDirectory">
               Alumni Directory
-            </a>
+            </Link>
           </li>
           <li className="nav-item ">
-            <a className="nav-link ps-4 pe-4 login-btn" href="#login">
+            <Link className="nav-link ps-4 pe-4 login-btn" to="/login">
               Login
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
