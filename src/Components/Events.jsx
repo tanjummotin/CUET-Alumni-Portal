@@ -13,16 +13,16 @@ export default function Events() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid item lg={12} xs={12} md={12}></Grid>
         <div className="row-cols-1">
-          {EventRecords.map((record) => (
-            <div key={record.id}>
-              <EventCardUi
-                date={record.date}
-                month={record.month}
-                title={record.title}
-                time={record.time}
-                place={record.place}
-              />
-            </div>
+          {/* {EventRecords.map((record) => ( */}
+          <div key={record.id}>
+            <EventCardUi
+              date={record.date}
+              month={record.month}
+              title={record.title}
+              time={record.time}
+              place={record.place}
+            />
+          </div>
           ))}
         </div>
       </Box>
