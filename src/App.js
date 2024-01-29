@@ -11,8 +11,10 @@ import Profile from "./Components/ProfilePage";
 import Registration from "./Components/registration";
 import AlumniList from "./Components/alumni_list";
 import EventList from "./Components/event_list";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SearchResults from "./Components/SearchResults"
+import CardsData from "./Components/AlumniCardData";
+import EventCardUi from "./Components/EventCardUi"
 function App() {
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
           <Route path="/eventList" element={<EventCardUi />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/alumniDirectory/search" element={<SearchResults />} />
         </Routes>
       </BrowserRouter>
     </>

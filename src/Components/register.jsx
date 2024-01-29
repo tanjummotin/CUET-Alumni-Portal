@@ -98,7 +98,7 @@ export default function Register() {
             <div className="col-12 col-md-9 col-lg-7 col-xl-6">
               <div className="card shadow">
                 <div className="card-body p-5">
-                  <h3 className="text-center mb-5">Alumni Regustration Form</h3>
+                  <h3 className="text-center mb-5">Alumni Registration Form</h3>
                   <form>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="name">
