@@ -16,6 +16,7 @@ export default function Register() {
   const [linkedIn_profile_link, setlinkedIn_profile_link] = useState("");
   const [recent_degree, setrecent_degree] = useState("");
   const [university_name, setuniversity_name] = useState("");
+  const [password, setpassword] = useState("");
   const handleSubmit = () => {
     // Email validation
     if (nameField.length == 0) {
@@ -63,6 +64,10 @@ export default function Register() {
       alert("University Name required!!");
       return;
     }
+    if (password.length == 0) {
+      alert("password required!!");
+      return;
+    }
 
 
     const url = "http://localhost/test/formsubmit.php";
@@ -81,7 +86,7 @@ export default function Register() {
     fData.append("linkedIn_profile_link", linkedIn_profile_link);
     fData.append("recent_degree", recent_degree);
     fData.append("university_name", university_name);
-   
+    fData.append("password",password);
    
     axios
       .post(url, fData)
@@ -281,6 +286,19 @@ export default function Register() {
                         id="university_name"
                         value={university_name}
                         onChange={(e) => setuniversity_name(e.target.value)}
+                      />
+                    </div>
+                    <div className="form-outline mb-4">
+                      <label className="form-label" for="university_name">
+                      Password*
+                      </label>
+                      <input
+                        type='password'
+                        className="form-control form-control-lg"
+                        name="password"
+                        id="password"
+                        value={password}
+                        onChange={(e) => setpassword(e.target.value)}
                       />
                     </div>
 
