@@ -28,7 +28,7 @@ function App() {
           <Route path="/eventList" element={<EventCardUi />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/alumniDirectory/search" element={<SearchResults />} />
+          <Route path="/searchResult" element={<SearchResults />} />
         </Routes>
       </BrowserRouter>
     </>

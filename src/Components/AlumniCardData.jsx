@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CardUi } from "./AlumniCardUi"; // Import the CardUi component
 import "./Cardstyle.css";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useHistory,Link } from "react-router-dom";
 const CardsData = () => {
   const [alumniData, setAlumniData] = useState([]);
   const [search_by, setsearch_by] = useState(""); // Default search criteria
@@ -65,6 +65,7 @@ const CardsData = () => {
           
           {/* <button onClick={handleSearch}>Search</button> */}
           <div className="d-flex justify-content-center">
+            <Link to ='/searchResult'>
                       <input
                         type="button"
                         className="btn btn-primary btn-block btn-sm "
@@ -72,8 +73,10 @@ const CardsData = () => {
                         id="submit"
                         value="Search"
                         onClick={handleSearch}
-                      />
+                      /></Link>
                     </div>
+                    
+
          
         </div>
         </form>
