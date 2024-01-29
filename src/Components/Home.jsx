@@ -2,7 +2,7 @@ import React from "react";
 import image1 from "../assets/gate.jpg"; // Replace with your actual image paths
 import image2 from "../assets/murti.jpg";
 import image3 from "../assets/jungle.jpg";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
@@ -13,7 +13,7 @@ function Home() {
       >
         <div className="carousel-indicators">
           <button
-            type="button"
+            // type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
             className="active"
@@ -78,7 +78,7 @@ function Home() {
           provide unwavering assistance to elevate our cherished alma mater into
           a globally acclaimed institution for technical and scientific
           education, and actively contribute to the rapid and sustainable
-          development of the nation..<a href="Mission">see more</a>
+          development of the nation..<Link to="/">see more</Link>
         </p>
       </div>
     </>
