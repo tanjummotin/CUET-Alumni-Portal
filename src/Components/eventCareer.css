@@ -49,3 +49,11 @@
     font-size: 18px;
     color: #424242;
 }
+.custom-button {
+    background-color: #004d99 !important; /* Use !important to override Bootstrap styles */
+  }
+  
+  .custom-box {
+    background-color: #e6eeff;
+  }
+  

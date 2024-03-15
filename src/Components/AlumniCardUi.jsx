@@ -16,7 +16,7 @@ import { GoProjectRoadmap } from "react-icons/go";
 export const CardUi = (props) => {
   return (
     <>
-      <div className="card alumniCard">
+      <div className="card alumniCard" style={{ backgroundColor: "#e6e6ff" }}>
         <div className="row">
           <div className="col-3 card-body  justify-content-center align-items-center m-auto">
             {props.gender == "Female" ? (
@@ -39,7 +39,7 @@ export const CardUi = (props) => {
                 {props.present_position},{props.organization}
               </p>
             </div>
-            <div className="col-3">
+            <div className="col-8">
               <ul style={{ listStyleType: "none" }}>
                 <li>
                   <FontAwesomeIcon icon={faTint} /> {props.blood_group}

@@ -96,12 +96,12 @@ export default function Register() {
   };
 
   return (
-    <div className="vh-100 gradient-custom">
+    <div className="vh-100 gradient-custom gradient-custom mt-5" >
       <div className="mask d-flex align-items-center h-100 gradient-custom-3">
-        <div className="container h-100">
+        <div className="container h-100" >
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-              <div className="card shadow">
+              <div className="card shadow" style={{ backgroundColor: "#e6e6ff" }}>
                 <div className="card-body p-5">
                   <h3 className="text-center mb-5">Alumni Registration Form</h3>
                   <form>
@@ -266,7 +266,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="recent_degree">
-                        Recent Degree
+                        Recent Degree*
                       </label>
                       <input
                         type="text"
@@ -279,7 +279,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="university_name">
-                        University Name
+                        University Name*
                       </label>
                       <input
                         type="text"

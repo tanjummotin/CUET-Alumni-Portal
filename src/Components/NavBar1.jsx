@@ -45,13 +45,13 @@ export default function NavBar1() {
 
             <li className="nav-item">
             <Link className="nav-link link ps-4 pe-4" to="/alumniDirectory">
-              Alumni Directory
+            <span className="lighter-text">Alumni Directory</span>
             </Link>
           </li>
           ) : (
             <li className="nav-item">
             <Link className="nav-link link ps-4 pe-4" to="/login">
-              Alumni Directory
+            <span className="lighter-text">Alumni Directory</span>
             </Link>
           </li>
           )}
