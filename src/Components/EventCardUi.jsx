@@ -83,14 +83,26 @@ export const EventCardUi = () => {
           </div>
         </div>
         <div className="col-9">
-          <div className="row justify-content-end mt-3">
+          {loggedIn ? (
+
+            <div className="row justify-content-end mt-3">
             <button className="btn btn-primary w-25">
               <FontAwesomeIcon icon={faPlus} className="mr-1" />
               <Link to="/eventForm" className="text-white">
                 Add Event
               </Link>
             </button>
-          </div>
+            </div>
+            ) : (
+              <div className="row justify-content-end mt-3">
+              <button className="btn btn-primary w-25">
+                <FontAwesomeIcon icon={faPlus} className="mr-1" />
+                <Link to="/login" className="text-white">
+                  Add Event
+                </Link>
+              </button>
+            </div>
+            )}
           {/* Map through eventData and render each event */}
           {eventData.map((event) => (
             <Box
