@@ -22,52 +22,52 @@ export default function Register() {
     // Email validation
     if (nameField.length == 0) {
       alert("Name required!!");
-      return;
+      //return;
     }
     if (email.length == 0) {
       alert("Email required!!");
-      return;
+      //return;
     }
     if (!email.includes("@")) {
       alert("Invalid Email!");
-      return;
+      //return;
     }
     if (date_of_birth.length == 0) {
       alert("Date of Birth required!!");
-      return;
+      //return;
     }
     if (department.length == 0) {
       alert("Department required!!");
-      return;
+      //return;
     }
     if (batch.length == 0) {
       alert("Batch required!!");
-      return;
+     // return;
     }
     if (phone_no.length == 0) {
       alert("Phone No required!!");
-      return;
+      //return;
     }
     if (present_address.length == 0) {
       alert("Present Address required!!");
-      return;
+      //return;
     }
     if (gender.length == 0) {
       alert("Gender required!!");
-      return;
+     // return;
     }
 
     if (recent_degree.length == 0) {
       alert("Recent Degree required!!");
-      return;
+      //return;
     }
     if (university_name.length == 0) {
       alert("University Name required!!");
-      return;
+      //return;
     }
     if (password.length == 0) {
       alert("password required!!");
-      return;
+      //return;
     }
 
     const url = "http://localhost/test/formsubmit.php";
