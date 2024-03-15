@@ -7,6 +7,9 @@ import "./eventCareer.css";
 import { Link } from "react-router-dom";
 export const EventCardUi = () => {
   const [eventData, setEventData] = useState([]);
+  const loggedIn = sessionStorage.getItem("loggedIn");
+
+
 
   useEffect(() => {
     // Fetch event data from PHP script
