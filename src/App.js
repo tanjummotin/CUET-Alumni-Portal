@@ -36,7 +36,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/searchResult" element={<SearchResults />} />
           <Route path="/eventForm" element={<Add_Event_Form />} />
-          <Route path="/alumniDirectory/search" element={<SearchResults />} />
+         
         </Routes>
       </BrowserRouter>
     </>
