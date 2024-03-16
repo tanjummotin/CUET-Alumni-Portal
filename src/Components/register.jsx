@@ -57,14 +57,14 @@ export default function Register() {
      // return;
     }
 
-    if (recent_degree.length == 0) {
-      alert("Recent Degree required!!");
-      //return;
-    }
-    if (university_name.length == 0) {
-      alert("University Name required!!");
-      //return;
-    }
+    // if (recent_degree.length == 0) {
+    //   alert("Recent Degree required!!");
+    //   //return;
+    // }
+    // if (university_name.length == 0) {
+    //   alert("University Name required!!");
+    //   //return;
+    // }
     if (password.length == 0) {
       alert("password required!!");
       //return;

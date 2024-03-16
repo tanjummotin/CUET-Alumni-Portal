@@ -59,7 +59,7 @@ export default function NavBar1() {
             <>
             <li className="nav-item">
              <Link className="nav-link ps-4 pe-4 login-btn" to="/">
-                Welcome, {username}
+                {username}
               </Link>
             </li>
             <li className="nav-item">
@@ -74,6 +74,24 @@ export default function NavBar1() {
             <li className="nav-item">
               <Link className="nav-link ps-4 pe-4 login-btn" to="/login">
                 Login
+              </Link>
+            </li>
+          )}
+          {loggedIn ? (
+            <>
+            <li className="nav-item">
+             <Link className="nav-link ps-4 pe-4 login-btn" to="/profileView">
+                view_profile
+              </Link>
+            </li>
+            </>
+            
+
+
+          ) : (
+            <li className="nav-item">
+              <Link className="nav-link ps-4 pe-4 login-btn" to="/login">
+                view_profile
               </Link>
             </li>
           )}

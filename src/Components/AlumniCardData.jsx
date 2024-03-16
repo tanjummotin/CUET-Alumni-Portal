@@ -49,6 +49,7 @@ const CardsData = () => {
             name = "search_by"
             onChange={(e) => setsearch_by(e.target.value)}
           >
+             <option value="">Select option</option>
             <option value="name">Name</option>
             <option value="present_position">Present Position</option>
             <option value="organization">Organization</option>

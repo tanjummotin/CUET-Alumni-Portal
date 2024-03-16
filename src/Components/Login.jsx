@@ -142,10 +142,17 @@ function Login() {
         if (response.data.status == "success") {
           console.log("here2");
           sessionStorage.setItem("loggedIn", true);
+
+            // eita age cilo na
+          //   const userData = {
+          //     username: response.data.data.username,
+          //     blood_group: response.data.data.blood_group
+          // };
           sessionStorage.setItem(
             "userData",
             JSON.stringify(response.data.data)
           );
+         
         
           window.location.href = "/";
         } else {
