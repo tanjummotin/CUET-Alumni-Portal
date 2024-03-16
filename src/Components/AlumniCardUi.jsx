@@ -53,12 +53,12 @@ export const CardUi = (props) => {
                 </li>
               </ul>
             </div>
-            <Link
+            {/* <Link
               to="\profileView"
               className="btn btn-primary btn-sm mt-1 ViewBtn"
             >
               View Details
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
