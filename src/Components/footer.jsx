@@ -1,12 +1,12 @@
 import logo from "../assets/CUETALUMNI_finall.png";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <>
-      <div className="contaoner-fluid footer fixed-bottom">
+    <div className="footer">
+      <div className="container">
         <div className="row">
           <div className="col-8">
-            <img src={logo} alt="" />
+            <img src={logo} alt="CUET Alumni" />
             <p>
               The organizational structure and management system of CUET Alumni
               are directed by its Constitution. The Constitution outlines a
@@ -17,28 +17,22 @@ function Footer() {
           <div className="col-4">
             <ul>
               <li>
-                <a href="#about">About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <a href="Events">Events</a>
+                <Link to="/eventList">Events</Link>
               </li>
               <li>
-                <a href="Career">Career</a>
+                <Link to="/alumniDirectory">Alumni Directory</Link>
               </li>
               <li>
-                <a href="#ApplyforMembership">Apply for membership</a>
-              </li>
-              <li>
-                <a href="Contact">Contact</a>
-              </li>
-              <li>
-                <a href="#CUET">CUET</a>
+                <Link to="/register">Apply for membership</Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

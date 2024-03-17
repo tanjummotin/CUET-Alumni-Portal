@@ -17,8 +17,9 @@ import Add_Event_Form from "./Components/Add_Event_Form";
 import Registration from "./Components/registration";
 import AlumniList from "./Components/alumni_list";
 import EventList from "./Components/event_list";
-import logout from "./Components/logout" ;
+import logout from "./Components/logout";
 import SearchResults from "./Components/SearchResults";
+import Footer from "./Components/footer";
 
 function App() {
   return (
@@ -36,9 +37,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/searchResult" element={<SearchResults />} />
           <Route path="/eventForm" element={<Add_Event_Form />} />
-          
-         
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );
