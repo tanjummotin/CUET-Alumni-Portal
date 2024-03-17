@@ -226,7 +226,7 @@ function Login() {
   //   </Box>
   // );
 
-  return 
+  return (
     <>
       <div className="container-fluid p-3 row justify-content-center">
         <div className="col-md-6">
