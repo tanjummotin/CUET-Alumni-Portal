@@ -5,6 +5,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import eventImg from "../assets/murti.jpg";
 import "./eventCareer.css";
 import { Link } from "react-router-dom";
+import Footer from "./footer";
 
 export const EventCardUi = () => {
   const [eventData, setEventData] = useState([]);
@@ -128,6 +129,7 @@ export const EventCardUi = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

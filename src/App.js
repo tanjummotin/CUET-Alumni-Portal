@@ -38,7 +38,6 @@ function App() {
           <Route path="/searchResult" element={<SearchResults />} />
           <Route path="/eventForm" element={<Add_Event_Form />} />
         </Routes>
-        <Footer></Footer>
       </BrowserRouter>
     </>
   );

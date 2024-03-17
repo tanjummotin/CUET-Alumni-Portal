@@ -1,5 +1,6 @@
 import React from "react";
 import image3 from "../assets/jungle.jpg";
+import Footer from "./footer";
 
 export default function About() {
   return (
@@ -128,6 +129,7 @@ export default function About() {
           </ol>
         </p>
       </div>
+      <Footer />
     </>
   );
 }

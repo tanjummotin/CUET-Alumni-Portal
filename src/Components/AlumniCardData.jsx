@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { CardUi } from "./AlumniCardUi"; // Import the CardUi component
 import "./Cardstyle.css";
 import axios from "axios";
-import { useHistory,Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
+import Footer from "./footer";
 const CardsData = () => {
   const [alumniData, setAlumniData] = useState([]);
   const [search_by, setsearch_by] = useState(""); // Default search criteria
   const [search_value, setsearch_value] = useState("");
-
 
   useEffect(() => {
     // Fetch alumni data from PHP script
@@ -35,51 +35,47 @@ const CardsData = () => {
       .catch((error) => alert(error));
   };
 
- 
-
   return (
     <>
-    <div className="container">
-    <form action = "" align = 'center' method = "post">
-        <div className="mb-3">
-          {/* <label htmlFor="searchBy">Search By:</label> */}
-          <select
-            id="search_by"
-            value={search_by}
-            name = "search_by"
-            onChange={(e) => setsearch_by(e.target.value)}
-          >
-             <option value="">Select option</option>
-            <option value="name">Name</option>
-            <option value="present_position">Present Position</option>
-            <option value="organization">Organization</option>
-            {/* Add more options based on your data structure */}
-          </select>
-          <input
-            type="text"
-            id="search_value"
-            placeholder="Type to search"
-            name = "search_value"
-            value={search_value}
-            onChange={(e) => setsearch_value(e.target.value)}
-          />
-          
-          {/* <button onClick={handleSearch}>Search</button> */}
-          <div className="d-flex justify-content-center">
-            <Link to ='/searchResult'>
-                      <input
-                        type="button"
-                        className="btn btn-primary btn-block btn-sm "
-                        name="submit"
-                        id="submit"
-                        value="Search"
-                        onClick={handleSearch}
-                      /></Link>
-                    </div>
-                    
+      <div className="container">
+        <form action="" align="center" method="post">
+          <div className="mb-3">
+            {/* <label htmlFor="searchBy">Search By:</label> */}
+            <select
+              id="search_by"
+              value={search_by}
+              name="search_by"
+              onChange={(e) => setsearch_by(e.target.value)}
+            >
+              <option value="">Select option</option>
+              <option value="name">Name</option>
+              <option value="present_position">Present Position</option>
+              <option value="organization">Organization</option>
+              {/* Add more options based on your data structure */}
+            </select>
+            <input
+              type="text"
+              id="search_value"
+              placeholder="Type to search"
+              name="search_value"
+              value={search_value}
+              onChange={(e) => setsearch_value(e.target.value)}
+            />
 
-         
-        </div>
+            {/* <button onClick={handleSearch}>Search</button> */}
+            <div className="d-flex justify-content-center">
+              <Link to="/searchResult">
+                <input
+                  type="button"
+                  className="btn btn-primary btn-block btn-sm "
+                  name="submit"
+                  id="submit"
+                  value="Search"
+                  onClick={handleSearch}
+                />
+              </Link>
+            </div>
+          </div>
         </form>
         <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2">
           {alumniData.map((record) => (
@@ -97,6 +93,7 @@ const CardsData = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -3,6 +3,7 @@ import image1 from "../assets/gate.jpg"; // Replace with your actual image paths
 import image2 from "../assets/murti.jpg";
 import image3 from "../assets/jungle.jpg";
 import { Link } from "react-router-dom";
+import Footer from "./footer";
 function Home() {
   return (
     <>
@@ -81,6 +82,7 @@ function Home() {
           development of the nation..<Link to="/about">see more</Link>
         </p>
       </div>
+      <Footer></Footer>
     </>
   );
 }

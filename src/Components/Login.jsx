@@ -98,7 +98,7 @@
 //   );
 // }
 import React, { useState } from "react";
-import cover from '../assets/Untitled design (1).png';
+import cover from "../assets/Untitled design (1).png";
 import axios from "axios";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -109,6 +109,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
+import Footer from "./footer";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -143,7 +144,7 @@ function Login() {
           console.log("here2");
           sessionStorage.setItem("loggedIn", true);
 
-            // eita age cilo na
+          // eita age cilo na
           //   const userData = {
           //     username: response.data.data.username,
           //     blood_group: response.data.data.blood_group
@@ -152,11 +153,10 @@ function Login() {
             "userData",
             JSON.stringify(response.data.data)
           );
-         
-        
+
           window.location.href = "/";
         } else {
-          console.log("inelse")
+          console.log("inelse");
           setError(response.data.message);
         }
       })
@@ -225,83 +225,92 @@ function Login() {
   //     </Container>
   //   </Box>
   // );
-  
+
   return (
-    <div className="container-fluid p-3 row justify-content-center">
-      <div className="col-md-6">
-        <div className="card border-0 login-card">
-          <div className="card-body  p-5">
-            <h5 className="card-title text-center mb-4">
-              Join the CUET Alumni Association to reconnect with your friends,
-              classmates, seniors & juniors.
-            </h5>
-            <form className="row justify-content-center" onSubmit={handleSubmit}>
-{error && (
-            <Alert style={{ marginBottom: "20px" }} severity="error">
-              {error}
-            </Alert>
-          )}
-              <div className="col-12 col-md-6 mb-3">
-                <TextField
-            type="email"
-            value={email}
-            onChange={handleEmailChange}
-            variant="filled"
-            id="email"
-            label="Email address"
-            fullWidth
-            style={{ marginBottom: "20px" }}
-          />             
- </div>
-              <div className="col-12 col-md-6 mb-3">
-                <TextField
-            type={showPassword ? "text" : "password"}
-            value={password}
-            onChange={handlePasswordChange}
-            variant="filled"
-            id="password"
-            label="Password"
-            fullWidth
-            style={{ marginBottom: "20px" }}
-            InputProps={{
-              endAdornment: (
-                <IconButton onClick={handleShowPassword}>
-                  {showPassword ? <VisibilityOff /> : <Visibility />}
-                </IconButton>
-              ),
-            }}
-          />
-              </div>
-              <div className="col-12 mb-3">
-                {/* <button type="submit" className="btn btn-primary w-100">
+    <>
+      <div className="container-fluid p-3 row justify-content-center">
+        <div className="col-md-6">
+          <div className="card border-0 login-card">
+            <div className="card-body  p-5">
+              <h5 className="card-title text-center mb-4">
+                Join the CUET Alumni Association to reconnect with your friends,
+                classmates, seniors & juniors.
+              </h5>
+              <form
+                className="row justify-content-center"
+                onSubmit={handleSubmit}
+              >
+                {error && (
+                  <Alert style={{ marginBottom: "20px" }} severity="error">
+                    {error}
+                  </Alert>
+                )}
+                <div className="col-12 col-md-6 mb-3">
+                  <TextField
+                    type="email"
+                    value={email}
+                    onChange={handleEmailChange}
+                    variant="filled"
+                    id="email"
+                    label="Email address"
+                    fullWidth
+                    style={{ marginBottom: "20px" }}
+                  />
+                </div>
+                <div className="col-12 col-md-6 mb-3">
+                  <TextField
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={handlePasswordChange}
+                    variant="filled"
+                    id="password"
+                    label="Password"
+                    fullWidth
+                    style={{ marginBottom: "20px" }}
+                    InputProps={{
+                      endAdornment: (
+                        <IconButton onClick={handleShowPassword}>
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      ),
+                    }}
+                  />
+                </div>
+                <div className="col-12 mb-3">
+                  {/* <button type="submit" className="btn btn-primary w-100">
                   <Link to="/">Login </Link>
                 </button> */}
-                <button type="submit" className="btn btn-primary w-100 bg-primary">
-                <Link to="/" className="text-light text-decoration-none">Login</Link>
-                </button>
-
-              </div>
-              <div className="col-12 text-center">
-                <button type="createAcc" className="btn btn-secondary">
-                  <a
-                    href="/register"
-                    style={{ color: 'white', textDecoration: 'none' }}
+                  <button
+                    type="submit"
+                    className="btn btn-primary w-100 bg-primary"
                   >
-                    Create an account
-                  </a>
-                </button>
-              </div>
-            </form>
+                    <Link to="/" className="text-light text-decoration-none">
+                      Login
+                    </Link>
+                  </button>
+                </div>
+                <div className="col-12 text-center">
+                  <button type="createAcc" className="btn btn-secondary">
+                    <a
+                      href="/register"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      Create an account
+                    </a>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="col-6">
-        <img src={cover} alt="Cover" className="img-fluid" />
+        <div className="col-6">
+          <img src={cover} alt="Cover" className="img-fluid" />
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
 export default Login;
-
