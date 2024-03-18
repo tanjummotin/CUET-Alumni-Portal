@@ -43,7 +43,7 @@ export default function Profile(second) {
                 </div>
                 <div className="col-6">
                   <ul className="list-unstyled">
-                    <li className="fw-bold">{name}</li>
+                    <li className="fw-bold">{username}</li>
                     <li>
                       {present_position}, {organization}
                     </li>

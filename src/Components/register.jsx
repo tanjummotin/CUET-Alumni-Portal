@@ -22,39 +22,39 @@ export default function Register() {
     // Email validation
     if (nameField.length == 0) {
       alert("Name required!!");
-      //return;
+      return;
     }
     if (email.length == 0) {
       alert("Email required!!");
-      //return;
+      return;
     }
     if (!email.includes("@")) {
       alert("Invalid Email!");
-      //return;
+      return;
     }
-    if (date_of_birth.length == 0) {
-      alert("Date of Birth required!!");
-      //return;
-    }
+    // if (date_of_birth.length == 0) {
+    //   alert("Date of Birth required!!");
+    //   //return;
+    // }
     if (department.length == 0) {
       alert("Department required!!");
-      //return;
+      return;
     }
     if (batch.length == 0) {
       alert("Batch required!!");
-     // return;
+      return;
     }
     if (phone_no.length == 0) {
       alert("Phone No required!!");
-      //return;
+      return;
     }
-    if (present_address.length == 0) {
-      alert("Present Address required!!");
-      //return;
-    }
+    // if (present_address.length == 0) {
+    //   alert("Present Address required!!");
+    //   return;
+    // }
     if (gender.length == 0) {
       alert("Gender required!!");
-     // return;
+      return;
     }
 
     // if (recent_degree.length == 0) {
@@ -67,7 +67,7 @@ export default function Register() {
     // }
     if (password.length == 0) {
       alert("password required!!");
-      //return;
+      return;
     }
 
     const url = "http://localhost/test/formsubmit.php";
@@ -96,12 +96,15 @@ export default function Register() {
   };
 
   return (
-    <div className="vh-100 gradient-custom gradient-custom mt-5" >
+    <div className="vh-100 gradient-custom gradient-custom mt-5">
       <div className="mask d-flex align-items-center h-100 gradient-custom-3">
-        <div className="container h-100" >
+        <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-              <div className="card shadow" style={{ backgroundColor: "#e6e6ff" }}>
+              <div
+                className="card shadow"
+                style={{ backgroundColor: "#e6e6ff" }}
+              >
                 <div className="card-body p-5">
                   <h3 className="text-center mb-5">Alumni Registration Form</h3>
                   <form>
@@ -134,7 +137,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="date_of_birth">
-                        Date of Birth*
+                        Date of Birth
                       </label>
                       <input
                         type="date"
@@ -225,7 +228,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="present_position">
-                        Present Address*
+                        Present Address
                       </label>
                       <input
                         type="text"
@@ -266,7 +269,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="recent_degree">
-                        Recent Degree*
+                        Recent Degree
                       </label>
                       <input
                         type="text"
@@ -279,7 +282,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="university_name">
-                        University Name*
+                        University Name
                       </label>
                       <input
                         type="text"
@@ -330,6 +333,7 @@ export default function Register() {
           </div>
         </div>
       </div>
+         
     </div>
   );
 }
