@@ -79,6 +79,6 @@ $stmt_messages = $conn->prepare($query_messages);
         }
         ?>
     </ul>
-    <a href="logout.php">Logout</a>
+    <!-- <a href="logout.php">Logout</a> -->
 </body>
 </html>
