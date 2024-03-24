@@ -22,39 +22,39 @@ export default function Register() {
     // Email validation
     if (nameField.length == 0) {
       alert("Name required!!");
-      //return;
+      return;
     }
     if (email.length == 0) {
       alert("Email required!!");
-      //return;
+      return;
     }
     if (!email.includes("@")) {
       alert("Invalid Email!");
-      //return;
+      return;
     }
-    if (date_of_birth.length == 0) {
-      alert("Date of Birth required!!");
-      //return;
-    }
+    // if (date_of_birth.length == 0) {
+    //   alert("Date of Birth required!!");
+    //   //return;
+    // }
     if (department.length == 0) {
       alert("Department required!!");
-      //return;
+      return;
     }
     if (batch.length == 0) {
       alert("Batch required!!");
-     // return;
+     return;
     }
     if (phone_no.length == 0) {
       alert("Phone No required!!");
-      //return;
+      return;
     }
-    if (present_address.length == 0) {
-      alert("Present Address required!!");
-      //return;
-    }
+    // if (present_address.length == 0) {
+    //   alert("Present Address required!!");
+    //   return;
+    // }
     if (gender.length == 0) {
       alert("Gender required!!");
-     // return;
+     return;
     }
 
     // if (recent_degree.length == 0) {
@@ -67,7 +67,7 @@ export default function Register() {
     // }
     if (password.length == 0) {
       alert("password required!!");
-      //return;
+      return;
     }
 
     const url = "http://localhost/test/formsubmit.php";
@@ -134,7 +134,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="date_of_birth">
-                        Date of Birth*
+                        Date of Birth
                       </label>
                       <input
                         type="date"
@@ -225,7 +225,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="present_position">
-                        Present Address*
+                        Present Address
                       </label>
                       <input
                         type="text"
@@ -266,7 +266,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="recent_degree">
-                        Recent Degree*
+                        Recent Degree
                       </label>
                       <input
                         type="text"
@@ -279,7 +279,7 @@ export default function Register() {
                     </div>
                     <div className="form-outline mb-4">
                       <label className="form-label" for="university_name">
-                        University Name*
+                        University Name
                       </label>
                       <input
                         type="text"
