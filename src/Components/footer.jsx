@@ -22,9 +22,9 @@ function Footer() {
               <li>
                 <Link to="/eventList">Events</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/alumniDirectory">Alumni Directory</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/register">Apply for membership</Link>
               </li>
